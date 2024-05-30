@@ -1,8 +1,17 @@
-function renderMenuPage() {
-  const container = document.querySelector('#content');
-  container.innerText = 'MENU123';
-  console.log('menu');
-  return container;
-}
+import clearContent from './clearcontent';
 
-export default renderMenuPage;
+function menuPage() {
+  console.log('menupage');
+  const container = document.querySelector('#content');
+  const element = document.createElement('div');
+
+  function renderMenuPage() {
+    clearContent();
+    element.innerText = 'MENU123';
+    container.appendChild(element);
+    console.log('menu');
+    return element;
+  }
+  return renderMenuPage();
+}
+export default menuPage;

@@ -17,5 +17,3 @@ function buttonFunctionality() {
 
 home();
 buttonFunctionality();
-
-console.log('xd');

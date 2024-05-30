@@ -1,8 +1,17 @@
-function renderHomePage() {
-  const element = document.querySelector('#content');
-  element.innerText = 'TESTEST1234'
-  console.log ('home');
-  return element;
-}
+import clearContent from './clearcontent';
 
-export default renderHomePage;
+function homePage() {
+  console.log('homepage');
+  const container = document.querySelector('#content');
+  const element = document.createElement('div');
+
+  function renderHomePage() {
+    clearContent();
+    element.innerText = 'home123';
+    container.appendChild(element);
+    console.log('home');
+    return element;
+  }
+  return renderHomePage();
+}
+export default homePage;

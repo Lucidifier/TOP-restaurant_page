@@ -1,8 +1,17 @@
-function renderContactPage() {
-  const container = document.querySelector('#content');
-  container.innerText = 'CONTACT123';
-  console.log('contact');
-  return container;
-}
+import clearContent from './clearcontent';
 
-export default renderContactPage;
+function contactPage() {
+  console.log('contactpage');
+  const container = document.querySelector('#content');
+  const element = document.createElement('div');
+
+  function renderContactPage() {
+    clearContent();
+    element.innerText = 'CONTACT12345';
+    container.appendChild(element);
+    console.log('contact123');
+    return element;
+  }
+  return renderContactPage();
+}
+export default contactPage;
