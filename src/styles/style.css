@@ -27,14 +27,25 @@ body {
   height: 100vh;
 }
 
+:root {
+  --first_color: #FF9843;
+  --second_color: #FFDD95;
+  --third_color: #86A7FC;
+  --fourth_color: #3468C0;
+
+  --big_font: 5em;
+  --medium_font: 3em;
+  --small_font: 1em;
+}
+
 @font-face {
   font-family: 'title-font';
-  src: url('../fonts/Sun\ Flower.ttf');
+  src: url('../fonts/Wizards\'\ Magic.ttf');
 }
 
 @font-face {
   font-family: 'text-font';
-  src: url('../fonts/Wizards\'\ Magic.ttf');
+  src: url('../fonts/Fragmentcore.otf');
 }
 
 .container {
@@ -52,7 +63,7 @@ body {
 
 #content {
   flex: 0 0 90%;
-  width: 80%;
+  width: 60%;
   max-height: 100%;
   border: 5px solid yellow;
 }
@@ -89,10 +100,13 @@ body {
 #homeTitleElement {
   flex: 0 0 20%;
   font-family: 'title-font', monospace;
+  font-size: var(--big_font);
   border: 2px solid red;
 }
 
 #homeTextElement {
   flex: 0 0 40%;
+  font-family: 'text-font', monospace;
+  font-size: var(--medium_font);
   border: 2px solid purple;
 }
