@@ -27,6 +27,16 @@ body {
   height: 100vh;
 }
 
+@font-face {
+  font-family: 'title-font';
+  src: url('../fonts/Sun\ Flower.ttf');
+}
+
+@font-face {
+  font-family: 'text-font';
+  src: url('../fonts/Wizards\'\ Magic.ttf');
+}
+
 .container {
   width: 100%;
   height: 100%;
@@ -78,6 +88,7 @@ body {
 
 #homeTitleElement {
   flex: 0 0 20%;
+  font-family: 'title-font', monospace;
   border: 2px solid red;
 }
 
