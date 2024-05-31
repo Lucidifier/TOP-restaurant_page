@@ -1,14 +1,14 @@
-import clearContent from './clearcontent';
+import clearContent from './clearcontent.js';
 
 function contactPage() {
   console.log('contactpage');
-  const container = document.querySelector('#content');
+  const contentContainer = document.querySelector('#content');
   const element = document.createElement('div');
 
   function renderContactPage() {
     clearContent();
     element.innerText = 'CONTACT12345';
-    container.appendChild(element);
+    contentContainer.appendChild(element);
     console.log('contact123');
     return element;
   }

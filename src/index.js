@@ -1,7 +1,7 @@
-import './style.css';
-import home from './home.js';
-import menu from './menu.js';
-import contact from './contact.js';
+import './styles/style.css';
+import home from './scripts/home.js';
+import menu from './scripts/menu.js';
+import contact from './scripts/contact.js';
 
 function buttonFunctionality() {
   const buttonHome = document.querySelector('#buttonHome');

@@ -1,14 +1,14 @@
-import clearContent from './clearcontent';
+import clearContent from './clearcontent.js';
 
 function menuPage() {
   console.log('menupage');
-  const container = document.querySelector('#content');
+  const contentContainer = document.querySelector('#content');
   const element = document.createElement('div');
 
   function renderMenuPage() {
     clearContent();
     element.innerText = 'MENU123';
-    container.appendChild(element);
+    contentContainer.appendChild(element);
     console.log('menu');
     return element;
   }
