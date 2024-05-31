@@ -23,7 +23,7 @@ function homePage() {
     titleElement.innerText = 'Fancy Beach Bar';
 
     textElement.id = 'homeTextElement';
-    textElement.innerText = 'Spend this summer in the fanciest beach bar available!';
+    textElement.innerText = 'Refresh yourself on warm summer days at the fanciest beach bar available! We offer highest quality of selected coctails, relaxing atmosphere, and friendly staff, which will make your vacation days memorable forever!';
 
     containerElement.appendChild(imageContainerElement);
     containerElement.appendChild(titleElement);
