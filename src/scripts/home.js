@@ -15,7 +15,6 @@ function homePage() {
     containerElement.id = 'homeContainerElement';
 
     imageContainerElement.id = 'homeImageContainer';
-    // imageContainerElement.innerText = 'image';
     imageElement.src = image;
     imageContainerElement.appendChild(imageElement);
 
@@ -31,8 +30,7 @@ function homePage() {
 
     contentContainer.appendChild(containerElement);
     console.log('home');
-    return containerElement;
-  }
+  };
   return renderHomePage();
 }
 export default homePage;

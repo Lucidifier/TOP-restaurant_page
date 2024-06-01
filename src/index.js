@@ -8,7 +8,7 @@ function buttonFunctionality() {
   const buttonMenu = document.querySelector('#buttonMenu');
   const buttonContact = document.querySelector('#buttonContact');
 
-  buttonHome.addEventListener('click', home)
+  buttonHome.addEventListener('click', home);
 
   buttonMenu.addEventListener('click', menu);
 
