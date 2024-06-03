@@ -1,7 +1,6 @@
 import clearContent from './clearcontent.js';
 
 function menuPage() {
-  console.log('menupage');
   const contentContainer = document.querySelector('#content');
   const containerElement = document.createElement('div');
   const titleElement = document.createElement('div');
@@ -40,7 +39,6 @@ function menuPage() {
     menuDivArr[5].innerText = '8e';
     menuDivArr[6].innerText = 'TEQUILA SUNRISE';
     menuDivArr[7].innerText = '15e';
-    console.log('menuasd');
   }
   return renderMenuPage();
 }

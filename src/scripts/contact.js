@@ -1,7 +1,6 @@
 import clearContent from './clearcontent.js';
 
 function contactPage() {
-  console.log("contactpage");
   const contentContainer = document.querySelector("#content");
   const containerElement = document.createElement("div");
   containerElement.id = "contactContainerElement";
@@ -61,7 +60,6 @@ function contactPage() {
     containerElement.appendChild(infoElement);
     renderFormElement();
     containerElement.appendChild(formElement);
-    console.log("contact123");
   };
   return renderContactPage();
 };

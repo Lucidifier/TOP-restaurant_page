@@ -2,7 +2,6 @@ import clearContent from './clearcontent.js';
 import image from '../images/beach_bar.jpg';
 
 function homePage() {
-  console.log('homepage');
   const contentContainer = document.querySelector('#content');
   const containerElement = document.createElement('div');
   const imageContainerElement = document.createElement('div');
@@ -29,7 +28,6 @@ function homePage() {
     containerElement.appendChild(textElement);
 
     contentContainer.appendChild(containerElement);
-    console.log('home');
   };
   return renderHomePage();
 }
