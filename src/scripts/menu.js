@@ -8,7 +8,7 @@ function menuPage() {
   const menuElement = document.createElement('div');
   let menuDivArr = [];
 
-  //CREATES MULTIPLE DIVS
+  //CREATES MULTIPLE DIVS THROUGH ARRAY  SO THEY  CAN BE  INDIVIDUALLY  SELECTED AND EDITED
   function createMenuDivArray() {
     for(let i = 0; i <= 7; i++) {
       menuDivArr[i] = `menuElementDiv${i}`;
@@ -19,22 +19,27 @@ function menuPage() {
   function createMenuDivs() {
     for(let i = 0; i <= 7; i++) {
       menuDivArr[i] = document.createElement('div');
-      contentContainer.appendChild(menuDivArr[i]);
+      menuElement.appendChild(menuDivArr[i]);
     };
   };
 
   function renderMenuPage() {
     clearContent();
     createMenuDivArray()
+    contentContainer.appendChild(ContainerElement);
+    ContainerElement.appendChild(titleElement);
+    ContainerElement.appendChild(menuElement);
+    ContainerElement.id = 'menuContainerElement';
+    titleElement.innerText = 'MENU';
     createMenuDivs();
-    menuDivArr[0].innerText = '1';
-    menuDivArr[1].innerText = '2';
-    menuDivArr[2].innerText = '3';
-    menuDivArr[3].innerText = '4';
-    menuDivArr[4].innerText = '5';
-    menuDivArr[5].innerText = '6';
-    menuDivArr[6].innerText = '7';
-    menuDivArr[7].innerText = '8';
+    menuDivArr[0].innerText = 'MOJITO';
+    menuDivArr[1].innerText = '10e';
+    menuDivArr[2].innerText = 'SEX ON THE BEACH';
+    menuDivArr[3].innerText = '12e';
+    menuDivArr[4].innerText = 'BLACK RUSSIAN';
+    menuDivArr[5].innerText = '8e';
+    menuDivArr[6].innerText = 'TEQUILA SUNRISE';
+    menuDivArr[7].innerText = '15e';
     console.log('menuasd');
   }
   return renderMenuPage();
