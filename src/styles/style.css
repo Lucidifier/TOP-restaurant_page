@@ -61,6 +61,33 @@ body {
 
 .container header {
   flex: 0 0 5%;
+  margin-bottom: 1ch;
+  margin-top: 1ch;
+}
+
+.container nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2ch;
+}
+
+.container header nav > button {
+  width: 10ch;
+  height: 3ch;
+  align-self: center;
+  font-family: 'text-font', monospace;
+  font-size: var(--button_font);
+  font-weight: bolder;
+  color: var(--second_color);
+  background-color: var(--fourth_color);
+  border: 5px solid var(--second_color);
+  border-radius: 1ch;
+}
+
+.container header nav > button:hover {
+  border: 5px solid var(--first_color);
+  color: var(--first_color);
 }
 
 #content {
@@ -70,7 +97,7 @@ body {
 }
 
 .container footer {
-  flex: 0 0 5%;
+  flex: 0 0 3%;
 }
 
 /* HOME */
@@ -117,7 +144,7 @@ body {
   font-family: 'text-font', monospace;
   font-size: var(--medium_font);
   text-align: center;
-  line-height: 3.5ch;
+  line-height: 3ch;
   color: var(--second_color);
   border-top: 5px solid var(--third_color);
   padding-top: 10px;
