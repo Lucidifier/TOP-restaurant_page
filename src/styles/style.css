@@ -35,7 +35,8 @@ body {
 
   --big_font: 5em;
   --medium_font: 3em;
-  --small_font: 1em;
+  --small_font: 2em;
+  --button_font: 1.5em;
 }
 
 @font-face {
@@ -203,4 +204,70 @@ body {
   grid-column: 3/4;
   grid-row: 4/5;
   padding-bottom: 2ch;
+}
+
+/* CONTACT */
+
+#contactContainerElement {
+  display: flex;
+  flex-direction: column;
+  gap: 2ch;
+  justify-content: center;
+  align-items: center;
+}
+
+#contactContainerElement > div:nth-child(1) {
+  font-family: 'title-font', monospace;
+  font-size: var(--big_font);
+  color: var(--first_color);
+  line-height: 3ch;
+}
+
+#contactContainerElement > div:nth-child(2) {
+  font-family: 'text-font', monospace;
+  font-size: var(--medium_font);
+  color: var(--second_color);
+}
+
+#contactContainerElement form {
+  display: flex;
+  flex-direction: column;
+  gap: 1ch;
+  margin-top: 8ch;
+}
+
+#contactContainerElement form label {
+  font-family: 'text-font', monospace;
+  font-size: var(--small_font);
+  color: var(--second_color);
+}
+
+#contactContainerElement form textarea {
+  width: 80ch;
+  height: 30ch;
+  resize: none;
+  border: 5px solid var(--third_color);
+  border-radius: 1ch;
+}
+
+#contactContainerElement form textarea:focus {
+  outline: none;
+  border: 5px solid var(--first_color);
+}
+
+#contactContainerElement form button {
+  width: 10ch;
+  height: 5ch;
+  align-self: center;
+  font-family: 'text-font', monospace;
+  font-size: var(--button_font);
+  font-weight: bolder;
+  color: var(--first_color);
+  background-color: var(--fourth_color);
+  border: 5px solid var(--third_color);
+  border-radius: 1ch;
+}
+
+#contactContainerElement form button:hover {
+  border: 5px solid var(--first_color);
 }

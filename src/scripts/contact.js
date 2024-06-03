@@ -43,13 +43,11 @@ function contactPage() {
     const formFieldInput = document.createElement('textarea');
     formFieldInput.setAttribute('id', 'comment_box');
     formFieldInput.setAttribute('name', 'comment_box');
-    formFieldInput.setAttribute('rows', '10');
-    formFieldInput.setAttribute('cols', '50');
     formFieldInput.setAttribute('placeholder', 'Fancy Beach Bar was awesome!');
     formFieldInput.setAttribute('maxlength', '500');
     formField.appendChild(formFieldInput);
     const formFieldButton = document.createElement('button');
-    formFieldButton.innerText = 'Submit';
+    formFieldButton.innerText = 'SUBMIT';
     formField.appendChild(formFieldButton);
     return formElement.appendChild(formField);
   }
@@ -57,7 +55,7 @@ function contactPage() {
   function renderContactPage() {
     clearContent();
     contentContainer.appendChild(containerElement);
-    titleElement.innerText = "Contact Us";
+    titleElement.innerText = "CONTACT US";
     containerElement.appendChild(titleElement);
     renderInfoElement();
     containerElement.appendChild(infoElement);
