@@ -132,12 +132,16 @@ body {
   gap: 2em;
 }
 
+/* MENU  TITLE */
+
 #menuContainerElement > div:nth-child(1) {
   font-family: 'title-font', monospace;
   font-size: var(--big_font);
   color: var(--first_color);
   line-height: 3ch;
 }
+
+/* MENU PRICES */
 
 #menuContainerElement > div:nth-child(2) {
   display: grid;
@@ -153,7 +157,7 @@ body {
   color: var(--second_color);
 }
 
-#menuContainerElement > div:nth-child(2) > div:nth-child(1n) {
+#menuContainerElement > div:nth-child(2) > div:nth-child(odd) {
   padding-left: 2ch;
 }
 
@@ -192,9 +196,11 @@ body {
 #menuContainerElement div > div:nth-child(7) {
   grid-column: 1/2;
   grid-row: 4/5;
+  padding-bottom: 2ch;
 }
 
 #menuContainerElement div > div:nth-child(8) {
   grid-column: 3/4;
   grid-row: 4/5;
+  padding-bottom: 2ch;
 }

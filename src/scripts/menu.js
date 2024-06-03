@@ -3,7 +3,7 @@ import clearContent from './clearcontent.js';
 function menuPage() {
   console.log('menupage');
   const contentContainer = document.querySelector('#content');
-  const ContainerElement = document.createElement('div');
+  const containerElement = document.createElement('div');
   const titleElement = document.createElement('div');
   const menuElement = document.createElement('div');
   let menuDivArr = [];
@@ -26,10 +26,10 @@ function menuPage() {
   function renderMenuPage() {
     clearContent();
     createMenuDivArray()
-    contentContainer.appendChild(ContainerElement);
-    ContainerElement.appendChild(titleElement);
-    ContainerElement.appendChild(menuElement);
-    ContainerElement.id = 'menuContainerElement';
+    contentContainer.appendChild(containerElement);
+    containerElement.appendChild(titleElement);
+    containerElement.appendChild(menuElement);
+    containerElement.id = 'menuContainerElement';
     titleElement.innerText = 'MENU';
     createMenuDivs();
     menuDivArr[0].innerText = 'MOJITO';
