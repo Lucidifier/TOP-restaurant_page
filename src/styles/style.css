@@ -98,6 +98,10 @@ body {
 
 .container footer {
   flex: 0 0 3%;
+  color: var(--first_color);
+  font-family: 'text-font', monospace;
+  font-size: var(--button_font);
+  font-weight: bold;
 }
 
 /* HOME */
@@ -238,7 +242,7 @@ body {
 #contactContainerElement {
   display: flex;
   flex-direction: column;
-  gap: 2ch;
+  gap: 1ch;
   justify-content: center;
   align-items: center;
 }
